@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://calc.sintetika.keenetic.pro",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

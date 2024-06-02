@@ -1,0 +1,233 @@
+:host {
+  /* настраиваем параметры контейнера калькулятора */
+
+  .container {
+    /* включаем гибкую вёрстку */
+    display: flex;
+    /* выравниваем контейнер по вертикали */
+    align-items: center;
+    /* выравниваем элементы внутри контейнера по центру */
+    justify-content: center;
+    /* высота контейнера — 100% видимой высоты экрана */
+    height: 100vh;
+    /* ширина контейнера — 100% видимой ширины экрана*/
+    width: 100vw;
+
+    font-family: Tahoma;
+    background-color: #424242;
+    background-image: url("./table.jpg");
+  }
+
+  /* настраиваем внешний вид калькулятора */
+
+  #container {
+    /* ширина 200 пикселей */
+    width: 200px;
+    /* отступы вокруг элементов контейнера */
+    padding: 8px 8px 20px 8px;
+    /* внешние отступы */
+    margin: 20px auto;
+    /* фоновый цвет калькулятора */
+    background-color: #ABABAB;
+    /* радиус скругления углов */
+    border-radius: 4px;
+    /* толщина и цвет верхней границы */
+    border-top: 2px solid #FFF;
+    /* толщина и цвет правой границы */
+    border-right: 2px solid #FFF;
+    /* толщина и цвет нижней границы */
+    border-bottom: 2px solid #C1C1C1;
+    /* толщина и цвет левой границы */
+    border-left: 2px solid #C1C1C1;
+    /* тень от калькулятора */
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);
+  }
+
+  /* настраиваем внешний вид дисплея */
+
+  #display {
+    /* указываем, что дисплей будет блочным элементом, который растягивается на всю доступную ему ширину */
+    display: block;
+    /* отступы сверху и снизу и горизонтальное выравнивание по центру */
+    margin: 15px auto;
+    /* высота дисплея — 42 пикселя*/
+    height: 42px;
+    /* ширина дисплея — 174 пикселя */
+    width: 174px;
+    /* отступов сверху и снизу нет, а слева и справа — по 10 пикселей */
+    padding: 0 10px;
+    /* радиус скругления углов */
+    border-radius: 4px;
+    /* толщина и цвет верхней рамки */
+    border-top: 2px solid #211c1c;
+    /* толщина и цвет правой рамки */
+    border-right: 2px solid #211c1c;
+    /* толщина и цвет нижней рамки */
+    border-bottom: 2px solid #040303;
+    /* толщина и цвет левой рамки */
+    border-left: 2px solid #040303;
+    /* цвет фона */
+    background-color: #71877d;
+    /* тени */
+    box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(75, 75, 75, 0.2);
+    /* размер шрифта */
+    font-size: 28px;
+    /* цвет шрифта */
+    color: #000000;
+    /* горизонтальное выравнивание по правому краю */
+    text-align: right;
+    /* насыщенность шрифта */
+    font-weight: 400;
+  }
+
+  /* настраиваем параметры кнопок */
+
+  .button {
+    /* делаем кнопки блочным элементом, чтобы размер можно было устанавливать по содержимому */
+    display: inline-block;
+    /* внешние отступы */
+    margin: 2px;
+    /* ширина */
+    width: 42px;
+    /* высота */
+    height: 42px;
+    /* размер шрифта */
+    font-size: 16px;
+    /* насыщенность: жирный шрифт */
+    font-weight: bold;
+    /* радиус скругления кнопок */
+    border-radius: 4px;
+  }
+
+  /* настраиваем внешний вид кнопок математических операторов */
+
+  .mathButtons {
+    /* внешние отступы */
+    margin: 2px 2px 6px 2px;
+    /* цвет шрифта */
+    color: #FFF;
+    /* тени надписей */
+    text-shadow: -1px -1px 0px #44006F;
+    /* цвет кнопок */
+    background-color: #434343;
+    /* толщина и цвет верхней рамки */
+    border-top: 2px solid #C1C1C1;
+    /* толщина и цвет правой рамки */
+    border-right: 2px solid #C1C1C1;
+    /* толщина и цвет нижней рамки */
+    border-bottom: 2px solid #181818;
+    /* толщина и цвет левой рамки */
+    border-left: 2px solid #181818;
+    /* тени */
+    box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #2E2E2E;
+  }
+
+  /* настраиваем внешний вид кнопок с цифрами */
+
+  .digits {
+    /* цвет шрифта */
+    color: #181818;
+    /* тени надписей */
+    text-shadow: 1px 1px 0px #FFF;
+    /* цвет кнопок */
+    background-color: #EBEBEB;
+    /* толщина и цвет верхней рамки */
+    border-top: 2px solid #FFF;
+    /* толщина и цвет правой рамки */
+    border-right: 2px solid #FFF;
+    /* толщина и цвет нижней рамки */
+    border-bottom: 2px solid #C1C1C1;
+    /* толщина и цвет правой рамки */
+    border-left: 2px solid #C1C1C1;
+    /* радиус скругления углов */
+    border-radius: 4px;
+    /* тени */
+    box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #DCDCDC;
+  }
+
+  /* настраиваем внешний вид кнопки сброса */
+
+  #clearButton {
+    /* задаём цвет шрифта */
+    color: #FFF;
+    /* тени надписи */
+    text-shadow: -1px -1px 0px #44006F;
+    /* цвет кнопки */
+    background-color: #D20000;
+    /* толщина и цвет верхней рамки */
+    border-top: 2px solid #FF8484;
+    /* толщина и цвет правой рамки */
+    border-right: 2px solid #FF8484;
+    /* толщина и цвет нижней рамки */
+    border-bottom: 2px solid #800000;
+    /* толщина и цвет левой рамки */
+    border-left: 2px solid #800000;
+    /* тени кнопки */
+    box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
+  }
+
+  /* настраиваем внешний вид кнопок при наведении мыши */
+  /* кнопки с цифрами */
+
+  .digits:hover,
+    /* кнопки математических операторов */
+  .mathButtons:hover,
+    /* кнопка сброса */
+  #clearButton:hover {
+    /* цвет фона */
+    background-color: #FFBA75;
+    /* тени */
+    box-shadow: 0px 0px 2px #FFBA75, inset 0px -20px 1px #FF8000;
+    /* толщина и цвет верхней рамки */
+    border-top: 2px solid #FFF;
+    /* толщина и цвет правой рамки */
+    border-right: 2px solid #FFF;
+    /* толщина и цвет нижней рамки */
+    border-bottom: 2px solid #AE5700;
+    /* толщина и цвет левой рамки */
+    border-left: 2px solid #AE5700;
+  }
+
+  .table {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .table thead th {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    background: #d8d8d8;
+    font-size: 14px;
+  }
+
+  .table thead tr th:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .table thead tr th:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+
+  .table tbody td {
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    vertical-align: top;
+  }
+
+  .table tbody tr:nth-child(even) {
+    background: #f3f3f3;
+  }
+
+  .table tbody tr td:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .table tbody tr td:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+}
